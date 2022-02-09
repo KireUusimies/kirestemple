@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Kire's Temple </title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background-color: rgb(0, 0, 0);
+            }
+            a.button:hover {
+                background-color: rgb(0, 0, 0);
+            }
+            #links {
+                position: absolute;
+                left: 265px;
+                top: 100px;
+                width: 412.5px;
+                font-family: monospace;
+            }
+            #sites {
+                background-color: rgb(168, 0, 0);
+                color: rgb(255, 255, 255);
+                height: 260px;
+                width: 38.375%;
+                border: 6px double rgb(255, 255, 255);
+                border-top: 0px;
+                font-size: 12px;
+                padding:1px;
+            }
+            #header {
+                background: rgb(168, 0, 0);
+                height: 90px;
+                padding:8px;
+                border: 6px double rgb(255, 255, 255);
+                font-size: 20px;
+                width: 35%;
+            }
+            .title {
+                color: rgb(255, 255, 0);
+            }
+            .subtext {
+                color: rgb(255, 255, 255);
+            }
+            #menu {
+                background-color: rgb(0, 168, 168);
+                height: 175px;
+                padding: 8px;
+                border: 6px double rgb(255, 255, 255);
+                border-top: 0px;
+                width: 35%;
+            }
+            #footer {
+                background-color: rgb(168, 0, 0);
+                color: rgb(255, 255, 255);
+                text-align: center;
+                height: 50px;
+                padding:8px;
+                border: 6px double rgb(255, 255, 255);
+                border-top: 3px;
+                width: 35%;
+            }
+            #container {
+                width:825px;
+                position: absolute;
+                left: 470px;
+                top: 100px;
+                font-size: 22px;
+                font-family: monospace;
+            }
+            #timeline {
+                position: absolute;
+                left: 805px;
+                top: 200;
+                width: 412.5px;
+                font-family: monospace;
+            }
+            #time {
+                background-color: rgb(168, 0, 0);
+                color: rgb(255, 255, 255);
+                width: 38.375%;
+                height: 260px;
+                padding: 1px;
+                border: 6px double rgb(255, 255, 255);
+                border-top: 0px;
+                font-size: 12px;
+                overflow: scroll;
+            }
+            #banners {
+                width:1,400px;
+                position: absolute;
+                left: 500px;
+                top: 675px;
+            }
+            a.site:link {
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+            }
+            a.site:visited {
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+            }
+            a.site:hover {
+                -webkit-animation: link-blink 1s infinite;
+                -moz-animation: link-blink 1s infinite;
+                animation: link-blink 1s infinite;
+            }
+            @-webkit-keyframes link-blink {
+                 0% { background-color: rgb(255, 255, 255); }
+                 0% { color: rgb(168, 0, 0); }
+                 49% { background-color: rgb(255, 255, 255); }
+                 49% { color: rgb(168, 0, 0); }
+                 50% { background-color: rgb(168, 0, 0); }
+                 50% { color: rgb(255, 255, 255); }
+                 99% { background-color: rgb(168, 0, 0); }
+                 99% { color: rgb(255, 255, 255); }
+                 100% { background-color: rgb(255, 255, 255); }
+                 100% { color: rgb(168, 0, 0); }
+            }
+             @-moz-keyframes link-blink {
+                 0% { background-color: rgb(255, 255, 255); }
+                 0% { color: rgb(168, 0, 0); }
+                 49% { background-color: rgb(255, 255, 255); }
+                 49% { color: rgb(168, 0, 0); }
+                 50% { background-color: rgb(168, 0, 0); }
+                 50% { color: rgb(255, 255, 255); }
+                 99% { background-color: rgb(168, 0, 0); }
+                 99% { color: rgb(255, 255, 255); }
+                 100% { background-color: rgb(255, 255, 255); }
+                 100% { color: rgb(168, 0, 0); }
+            }
+            @keyframes link-blink {
+                 0% { background-color: rgb(255, 255, 255); }
+                 0% { color: rgb(168, 0, 0); }
+                 49% { background-color: rgb(255, 255, 255); }
+                 49% { color: rgb(168, 0, 0); }
+                 50% { background-color: rgb(168, 0, 0); }
+                 50% { color: rgb(255, 255, 255); }
+                 99% { background-color: rgb(168, 0, 0); }
+                 99% { color: rgb(255, 255, 255); }
+                 100% { background-color: rgb(255, 255, 255); }
+                 100% { color: rgb(168, 0, 0); }
+            }
+            a.menu:link {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+            }
+            a.menu:visited {
+                color: rgb(0, 0, 0);
+            }
+            a.menu:hover {
+                -webkit-animation: menu-blink 1s infinite;
+                -moz-animation: menu-blink 1s infinite;
+                animation: menu-blink 1s infinite;
+            }
+            @-webkit-keyframes menu-blink {
+                 0% { background-color: rgb(255, 255, 0); }
+                 0% { color: rgb(0, 168, 168); }
+                 49% { background-color: rgb(255, 255, 0); }
+                 49% { color: rgb(0, 168, 168); }
+                 50% { background-color: rgb(0, 168, 168); }
+                 50% { color: rgb(0, 0, 0); }
+                 99% { background-color: rgb(0, 168, 168); }
+                 99% { color: rgb(0, 0, 0); }
+                 100% { background-color: rgb(255, 255, 0); }
+                 100% { color: rgb(0, 168, 168); }
+            }
+             @-moz-keyframes menu-blink {
+                 0% { background-color: rgb(255, 255, 0); }
+                 0% { color: rgb(0, 168, 168); }
+                 49% { background-color: rgb(255, 255, 0); }
+                 49% { color: rgb(0, 168, 168); }
+                 50% { background-color: rgb(0, 168, 168); }
+                 50% { color: rgb(0, 0, 0); }
+                 99% { background-color: rgb(0, 168, 168); }
+                 99% { color: rgb(0, 0, 0); }
+                 100% { background-color: rgb(255, 255, 0); }
+                 100% { color: rgb(0, 168, 168); }
+            }
+            @keyframes menu-blink {
+                 0% { background-color: rgb(255, 255, 0); }
+                 0% { color: rgb(0, 168, 168); }
+                 49% { background-color: rgb(255, 255, 0); }
+                 49% { color: rgb(0, 168, 168); }
+                 50% { background-color: rgb(0, 168, 168); }
+                 50% { color: rgb(0, 0, 0); }
+                 99% { background-color: rgb(0, 168, 168); }
+                 99% { color: rgb(0, 0, 0); }
+                 100% { background-color: rgb(255, 255, 0); }
+                 100% { color: rgb(0, 168, 168); }
+            }
+        </style>
+</head>
+
+<body>
+  <div id="links">
+    <div id="header">
+      <p class="title"><strong>COOL LINKS</strong></p>
+    </div>
+    <div id="sites">
+      <ul>
+        <li><small><a class="site" target="_blank" href="http://www.serotoninphobia.info/experiment-log/">SEROTONIN PHARMACEUTICALS</a></small></li>
+        <li><small><a class="site" target="_blank" href="https://www.windows93.net/">Windows 93</a></small></li>
+        <li><small><a class="site" target="_blank" href="https://mebious.neocities.org/">Mebious</a></small></li>
+        <li><small><a class="site" target="_blank" href="https://kicked-in-teeth.neocities.org/">KICKED IN TEETH</a></small></li>
+        <li><small><a class="site" target="_blank" href="https://joppiesaus.neocities.org/">joppiesaus</a></small></li>
+        <li><small><a class="site" target="_blank" href="http://earthovision.com/HOME/">Earthovision</a></small></li>
+      </ul>
+    </div>
+  </div>
+  <div id="container">
+    <div id="header">
+      <p class="title"><strong>KIRE'S TEMPLE</strong></p>
+      <p class="subtext">You're here for a reason</p>
+    </div>
+    <div id="menu">
+      <p><strong>MENU</strong></p>
+        <ul>
+          <li><strong><a class="menu" href="file:///C:/Users/Erik%20Nurminen/OneDrive/Documents/GitHub/Kire-s-Temple/dream-journal.html">DREAMS</a></strong></li>
+          <li><strong><a class="menu" href="file:///C:/Users/Erik%20Nurminen/OneDrive/Documents/GitHub/Kire-s-Temple/creepy_timeline.html">CREEPY</a></strong></li>
+          <li><strong><a class="menu" href="file:///C:/Users/Erik%20Nurminen/OneDrive/Documents/GitHub/Kire-s-Temple/research.html">RESEARCH</a></strong></li>
+          <li><strong><a class="menu" href="file:///C:/Users/Erik%20Nurminen/OneDrive/Documents/GitHub/Kire-s-Temple/worlds.html">WORLDS</a></strong></li>
+        </ul>
+      </div>
+    <div id="footer">
+      <p><small>© 2019-2022 Kire Uusimies</small></p>
+    </div>
+  </div>
+  <div id="timeline">
+    <div id="header">
+      <p class="title"><strong>HIGHLIGHTS</strong></p>
+    </div>
+    <div id="time">
+      <ul>
+        <li><small>1/15/22 - Eretz Food</small></li>
+		<li><small>1/24/21 - Kalevala Objects</small></li>
+        <li><small>1/23/21 - Eretz Glossary, Kalevala Animals, Kalevala Plants and Fungi, Kalevala Glossary</small></li>
+        <li><small>1/22/21 - Eretz Animals, Eretz Glossary</small></li>
+        <li><small>1/19/21 - Kalevala Glossary, Eretz Glossary, Kalevala Animals</small></li>
+        <li><small>1/18/21 - Kalevala Plants and Fungi, Kalevala Glossary, Eretz Glossary</small></li>
+        <li><small>1/17/21 - Kalevala Plants and Fungi, Kalevala Animals, Kalevala, Kalevala Glossary, Eretz Glossary</small></li>
+        <li><small>1/16/21 - Kalevala, Eretz, Kalevala Animals, Kalevala Plants and Fungi</small></li>
+        <li><small>1/14/21 - Eretz</small></li>
+        <li><small>12/17/20 - Eretz Plants</small></li>
+        <li><small>12/16/20 - Eretz Plants</small></li>
+        <li><small>11/29/20 - Eretz Plants</small></li>
+        <li><small>11/26/20 - Eretz Plants</small></li>
+        <li><small>11/14/20 - Eretz Plants</small></li>	
+        <li><small>6/23/20 - In Ireland,</small></li>
+        <li><small>6/3/20 - Eretz Animals</small></li>
+        <li><small>5/31/20 - Eretz Animals</small></li>
+        <li><small>5/26/20 - Eretz Animals</small></li>
+        <li><small>5/24/20 - Eretz Animals</small></li>
+		<li><small>1/4/20 - Eretz Animals</small></li>
+        <li><small>12/17/19 - Eretz Animals</small></li>
+        <li><small>10/15/19 - Eretz Animals</small></li>
+        <li><small>3/22/19 - Creepy Timeline</small></li>
+        <li><small>3/21/19 - Creepy Timeline</small></li>
+        <li><small>3/17/19 - Creepy Timeline, Homepage</small></li>
+        <li><small>3/14/19 - Creepy Timeline</small></li>
+        <li><small>2/24/19 - Homepage</small></li>
+        <li><small>2/19/19 - Glory</small></li>
+        <li><small>2/18/19 - Glory</small></li>
+        <li><small>2/17/19 - Glory, Dream Journal, Homepage, Other Creepypastas, Creepy Timeline</small></li>
+        <li><small>2/10/19 - Homepage, Creepy Timeline</small></li>
+        <li><small>2/9/19 - Albany / Oatmeal, Dream Journal</small></li>
+        <li><small>2/8/19 - Horrorland Portals, Dream Journal</small></li>
+        <li><small>2/7/19 - The Wild Spirit, Basement Bookshelf</small></li>
+        <li><small>2/5/19 - The Wild Spirit, Dream Journal</small></li>
+        <li><small>2/4/19 - Black and White Banner, Basement Bookshelf, Japanese Game, Dream Journal</small></li>
+        <li><small>2/3/19 - Basement Bookshelf, Dream Journal, Homepage, Yŋglyʃ, Creepy Timeline</small></li>
+        <li><small>2/1/19 - Creepy Timeline</small></li>
+        <li><small>1/31/19 - Yŋglyʃ, Research</small></li>
+        <li><small>1/30/19 - Japanese Game, Dream Journal, Creepy Timeline, Yŋglyʃ, Research </small></li>
+        <li><small>1/29/19 - Homepage, Creepy Timeline</small></li>
+        <li><small>1/28/19 - Homepage, Creepy Timeline, Research, Yŋglyʃ, Dream Journal</small></li>
+        <li><small>1/25/19 - Creepy Timeline</small></li>
+        <li><small>1/24/19 - Yŋglyʃ, Creepy Timeline</small></li>
+        <li><small>1/23/19 - Creepy Timeline</small></li>
+        <li><small>1/22/19 - Creepy Timeline, Research, Yŋglyʃ, Dream Journal</small></li>
+        <li><small>1/21/19 - Yŋglyʃ, Research</small></li>
+        <li><small>1/20/19 - Homepage, Yŋglyʃ, Research</small></li>
+        <li><small>1/19/19 - Creepy Timeline</small></li>
+        <li><small>1/18/19 - Creepy Timeline</small></li>
+        <li><small>1/17/19 - Creepy Timeline, Homepage</small></li>
+        <li><small>1/16/19 - Creepy Timeline</small></li>
+        <li><small>1/15/19 - Dream Journal, Creepy Timeline, Homepage</small></li>
+        <li><small>1/14/19 - Homepage, Creepy Timeline</small></li>
+        <li><small>1/13/19 - Creepy Timeline</small></li>
+        <li><small>1/12/19 - Creepy Timeline</small></li>
+        <li><small>1/11/19 - Creepy Timeline</small></li>
+        <li><small>1/10/19 - Creepy Timeline</small></li>
+        <li><small>1/9/19 - Creepy Timeline</small></li>
+        <li><small>1/8/19 - Research, Homepage, Creepy Timeline</small></li>
+        <li><small>1/7/19 - Creepy Timeline</small></li>
+        <li><small>1/6/19 - Homepage</small></li>
+        <li><small>1/5/19 - Homepage</small></li>
+        <li><small>1/4/19 - Homepage</small></li>
+        <li><small>1/3/19 - Homepage</small></li>
+      </ul>
+    </div>
+  </div>
+    <div id="banners">
+      <a class="button" target="_blank" href="https://loser.neocities.org/"><img src="https://owlman.neocities.org/OwlMan/Banners/loser_gagebutton.gif"></a>
+      <a class="button" target="_blank" href="http://melonking.net/"><img src="https://owlman.neocities.org/OwlMan/Banners/melonking_gwtagacw_edit.png"></a>
+      <a class="button" target="_blank" href="https://anlucas.neocities.org"><img src="https://owlman.neocities.org/OwlMan/Banners/anlucas.neocities.org.gif"></a>
+    </div>
+</body>
+</html>
